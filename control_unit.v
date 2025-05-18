@@ -2,7 +2,7 @@ module control_unit (
 	input wire clk,
 	input wire rst_n,
 	input wire [7:0] instr,  //從指令記憶體拿到的指令
-                 input wire zero,         // 來自ALU的Zero Flag(for BEQ)
+        input wire zero,         // 來自ALU的Zero Flag(for BEQ)
 	output reg we_a,        //寫入Reg A使能
 	output reg we_b,        //寫入Reg B使能
 	output reg [2:0] alu_op,      // 2-bit ALU操作碼
